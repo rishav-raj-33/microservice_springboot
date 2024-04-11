@@ -1,0 +1,11 @@
+package com.microservice.notification.helpers;
+
+public class AppConstants {
+	
+	public static final String PRODUCT_TOPIC="Product-Launch-Topic";
+	
+	
+    
+    
+
+}

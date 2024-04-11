@@ -1,0 +1,5 @@
+package com.microservice.notification.helpers;
+
+public class CustomerDetails {
+
+}

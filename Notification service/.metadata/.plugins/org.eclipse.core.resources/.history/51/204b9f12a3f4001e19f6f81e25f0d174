@@ -1,0 +1,13 @@
+package com.microservice.notification.helpers;
+
+public class AppConstants {
+	
+	public static final String PRODUCT_TOPIC="Product-Launch-Topic";
+	public static final String USER_NAME="Rishav Raj";
+	public static final String PASSWORD="Rishav@123";
+	
+	
+    
+    
+
+}

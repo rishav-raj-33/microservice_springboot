@@ -1,0 +1,9 @@
+package com.microservice.notification.helpers;
+
+import java.util.List;
+
+public class ResponseCustomer {
+	
+	List<CustomerDetails> list;
+
+}

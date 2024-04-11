@@ -1,0 +1,25 @@
+package com.microservice.notification.helpers;
+
+import java.io.IOException;
+
+import com.fasterxml.jackson.core.JacksonException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.JsonNode;
+
+public class CustomDeserializer extends JsonDeserializer<ProductNotification> {
+
+	@Override
+	public ProductNotification deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JacksonException {
+		
+		  JsonNode node = p.readValueAsTree();
+		  System.out.println(node);
+		  System.out.println(node.has("productName"));
+	        String productName = node.get("productName").asText();
+	        String productModel = node.get("productModel").asText();
+	        float price = node.get("price").floatValue(); 
+	        return new ProductNotification(productName, productModel, price);
+	}
+
+}

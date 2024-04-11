@@ -1,0 +1,22 @@
+package com.microservice.notification.serviceClass;
+
+import java.util.Map;
+
+import com.microservice.notification.helpers.ProductNotification;
+import com.microservice.notification.service.NotificationService;
+
+public class NotificationServiceClas implements NotificationService {
+
+	@Override
+	public void getNotification(ProductNotification productNotification) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sendMail(Map<String, String> customerList) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

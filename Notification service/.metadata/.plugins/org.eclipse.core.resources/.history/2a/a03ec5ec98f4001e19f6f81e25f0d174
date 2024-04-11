@@ -1,0 +1,5 @@
+package com.microservice.notification.serviceClass;
+
+public class NotificationServiceClass {
+
+}

@@ -1,0 +1,5 @@
+package com.microservice.notification.service;
+
+public interface NotificationService {
+
+}

@@ -1,0 +1,43 @@
+package com.microservice.notification.config;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.kafka.annotation.KafkaListener;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.microservice.notification.helpers.AppConstants;
+import com.microservice.notification.helpers.CustomDeserializer;
+import com.microservice.notification.helpers.ProductNotification;
+import com.microservice.notification.serviceClass.NotificationServiceClas;
+
+@Configuration
+public class KafkaConsumerConfig {
+	
+	@Autowired
+	private NotificationServiceClas serviceClas;
+
+	
+	@KafkaListener(topics=AppConstants.PRODUCT_TOPIC,groupId="group-1")
+	public void Notify(String message) throws JsonMappingException, JsonProcessingException {
+		ObjectMapper mapper=new ObjectMapper();
+		SimpleModule module = new SimpleModule();
+		module.addDeserializer(ProductNotification.class, new CustomDeserializer());
+		mapper.registerModule(module);
+		try {
+			ProductNotification notification=mapper.readValue(message, ProductNotification.class);
+			this.serviceClas.getNotification(notification);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+
+		}
+			
+	}
+	
+
+}

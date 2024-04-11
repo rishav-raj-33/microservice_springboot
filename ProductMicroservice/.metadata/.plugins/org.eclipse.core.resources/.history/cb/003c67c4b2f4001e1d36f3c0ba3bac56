@@ -1,0 +1,5 @@
+package com.microservice.product.helpers;
+
+public class CustomDeSerializer extends Ser {
+
+}

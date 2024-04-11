@@ -1,0 +1,9 @@
+content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.String"/></lhs><lhs name\="com.fasterxml.jackson.databind.deser.NullValueProvider"><rhs name\="com.microservice.notification.helpers.CustomDeserializer"/></lhs><lhs name\="com.fasterxml.jackson.databind.JsonDeserializer"><rhs name\="com.microservice.notification.helpers.CustomDeserializer"/></lhs><lhs name\="com.microservice.notification.helpers.ProductNotification"><rhs name\="com.microservice.notification.helpers.ProductNotification"/></lhs><lhs name\="com.microservice.notification.helpers.InformationExtractor"><rhs name\="com.microservice.notification.helpers.InformationExtractor"/></lhs></history>
+content_assist_number_of_computers=15
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
